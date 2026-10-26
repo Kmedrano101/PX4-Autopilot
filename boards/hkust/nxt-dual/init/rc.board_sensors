@@ -14,3 +14,6 @@ bmi088 -s -b 4 -G -R 2 start
 
 # internal baro
 spl06 -X -a 0x77 start
+
+# external compass on GPS1 I2C bus (QMC5883P @ 0x2C)
+qmc5883p -X start
